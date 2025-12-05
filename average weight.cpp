@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int avg, W1, W2;
+    scanf("%d %d %d", &avg, &W1, &W2);
+
+    int W3 = 3 * avg - (W1 + W2);
+
+    printf("%d", W3);
+    return 0;
+}
+
