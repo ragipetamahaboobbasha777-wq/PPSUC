@@ -1,14 +1,15 @@
-#include<stdio.h> 
-#include<math.h>
-int main()
-{
-	 int p,t,r;
-	 float si,ci;
-	 printf("enter p t r values");
-	 scanf("%d%d%d",&p,&t,&r);
-	 si=(p*t*r)/100.0;
-	 ci=p*pow(1+r/100.0,t)-p;
-	 printf("simple interst is %f/n",si);
-     printf("compound intrest is %f",ci);
-     return 0;
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double P, R, T;
+    scanf("%lf %lf %lf", &P, &R, &T);
+
+    double amount = P * pow((1 + R / 100), T);
+    double CI = amount - P;
+
+    printf("%.2f", CI);
+
+    return 0;
 }
+
